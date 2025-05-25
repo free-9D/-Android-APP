@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/common_bg_color"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <CheckBox
+        android:id="@+id/item_cart_cb"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"/>
+    
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/item_cart_iv"
+        tools:src="@color/common_colorPrimary"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+
+    <TextView
+        android:id="@+id/item_name_price_tv"
+        tools:text="商品名称\n￥99.9"
+        android:layout_marginStart="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    <com.qmuiteam.qmui.layout.QMUIButton
+        android:id="@+id/reduce_btn"
+        android:text="-"
+        app:qmui_border_color="@color/common_title_gray_color2"
+        app:qmui_border_width="1dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/item_count_tv"
+        android:text="1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"/>
+    <com.qmuiteam.qmui.layout.QMUIButton
+        android:id="@+id/item_add_btn"
+        android:text="+"
+        app:qmui_border_color="@color/common_title_gray_color2"
+        app:qmui_border_width="1dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+</com.qmuiteam.qmui.layout.QMUILinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_radius10_top">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/close_iv"
+            android:src="@mipmap/dialog_close_icon"
+            android:layout_width="40dp"
+            android:scaleType="centerInside"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:id="@+id/img_iv"
+            android:src="@mipmap/upload"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+    <jp.wasabeef.richeditor.RichEditor
+        android:id="@+id/comment_et"
+        android:layout_margin="10dp"
+        android:gravity="start"
+        android:background="@drawable/shape_radius5_gray"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+    <Button
+        android:id="@+id/comment_btn"
+        android:text="提交"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/common_white"
+        android:background="@drawable/shape_radius360_primary"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.design.appproject.widget.MyFlexBoxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:flexWrap="wrap"
+    style="@style/friendLink_list_item_style">
+    <com.design.appproject.widget.MyImageView
+        android:id="@+id/image_iv"
+        style="@style/friendLink_list_item_img_style"/>
+    <com.design.appproject.widget.MyTextView
+        android:id="@+id/friendlink_name_tv"
+        style="@style/friendLink_list_item_name_style"/>
+</com.design.appproject.widget.MyFlexBoxLayout>
